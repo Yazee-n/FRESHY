@@ -6,66 +6,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="FRESHY supplies freshly prepared pineapple, grapes and orange juices to restaurants, bakeries and supermarkets in Thodupuzha and nearby areas.">
+
+    <meta name="theme-color" content="#f7f8ed">
+
     <title>FRESHY | Simply Fresh, Simply FRESHY.</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
-     <header>
-    <nav class="navbar">
+    <header class="header">
+        <nav class="navbar">
 
-        <a href="#home" class="logo">
-            <img src="images/freshy-logo.png" alt="FRESHY Logo">
-        </a>
+            <a href="#home" class="logo">
+                FRESHY
+            </a>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#juices">Our Juices</a>
-            <a href="#business">For Businesses</a>
-            <a href="#contact">Contact</a>
-        </div>
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
 
-    </nav>
-</header>
-   
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#juices">Our Juices</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
     <main>
 
-        <!-- HERO -->
-        <section id="home" class="hero">
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
 
             <div class="hero-content">
 
-                <p class="eyebrow">DAILY FRESH JUICE.</p>
+                <span class="eyebrow">
+                    FRESH JUICE · DAILY SUPPLY
+                </span>
 
                 <h1>
                     Simply Fresh,<br>
-                    Simply FRESHY.
+                    Simply <span>FRESHY.</span>
                 </h1>
 
-               
+                <p>
+                    Freshly prepared fruit juices for restaurants,
+                    bakeries and supermarkets.
+                </p>
 
-                <a href="#business" class="primary-button">
-                    Explore Business Supply
+                <a href="#business" class="button">
+                    Explore Our Supply
+                    <span>↗</span>
                 </a>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Serving businesses in Thodupuzha & nearby areas
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-circle"></div>
+
+                <div class="hero-fruit fruit-one">🍍</div>
+                <div class="hero-fruit fruit-two">🍊</div>
+                <div class="hero-fruit fruit-three">🍇</div>
+
+                <div class="hero-label">
+                    <span>100%</span>
+                    <small>FRESH FEEL</small>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- JUICES -->
-        <section id="juices" class="juices-section">
+        <!-- INTRO STRIP -->
+        <section class="intro-strip">
+
+            <p>
+                MADE FRESH
+                <span>✳</span>
+                SUPPLIED DAILY
+                <span>✳</span>
+                MADE FOR BUSINESSES
+            </p>
+
+        </section>
+
+
+        <!-- JUICES SECTION -->
+        <section class="juices-section" id="juices">
 
             <div class="section-heading">
 
-                <p class="eyebrow">OUR CURRENT COLLECTION</p>
+                <span class="eyebrow">OUR COLLECTION</span>
 
-                <h2>Freshness in<br>Every Bottle.</h2>
+                <h2>
+                    A little fruit.<br>
+                    A lot of <span>freshness.</span>
+                </h2>
 
-                <p>Three refreshing flavours to start with.</p>
+                <p>
+                    Explore our refreshing range of freshly prepared juices.
+                </p>
 
             </div>
 
@@ -73,76 +127,112 @@
             <div class="juice-grid">
 
                 <article class="juice-card pineapple">
-                    <div class="juice-visual">🍍</div>
-                    <h3>Pineapple</h3>
-                    <p>Fresh pineapple juice</p>
+
+                    <div class="juice-image">
+                        <span>🍍</span>
+                    </div>
+
+                    <div class="juice-info">
+                        <span class="product-number">01 / OUR JUICES</span>
+                        <h3>Pineapple</h3>
+                        <p>Sweet, tropical and refreshing.</p>
+                    </div>
+
                 </article>
+
 
                 <article class="juice-card grapes">
-                    <div class="juice-visual">🍇</div>
-                    <h3>Grapes</h3>
-                    <p>Fresh grape juice</p>
+
+                    <div class="juice-image">
+                        <span>🍇</span>
+                    </div>
+
+                    <div class="juice-info">
+                        <span class="product-number">02 / OUR JUICES</span>
+                        <h3>Grapes</h3>
+                        <p>Rich, fruity and refreshing.</p>
+                    </div>
+
                 </article>
 
+
                 <article class="juice-card orange">
-                    <div class="juice-visual">🍊</div>
-                    <h3>Orange</h3>
-                    <p>Fresh orange juice</p>
+
+                    <div class="juice-image">
+                        <span>🍊</span>
+                    </div>
+
+                    <div class="juice-info">
+                        <span class="product-number">03 / OUR JUICES</span>
+                        <h3>Orange</h3>
+                        <p>Citrusy, bright and refreshing.</p>
+                    </div>
+
                 </article>
 
             </div>
 
 
-            <div class="bottle-sizes">
+            <div class="sizes">
 
-                <h3>Available Bottle Sizes</h3>
+                <h3>Available bottle sizes</h3>
 
                 <span>250 ml</span>
                 <span>450 ml</span>
 
-                <p>More flavours coming soon.</p>
+                <p>More refreshing flavours coming soon.</p>
 
             </div>
 
         </section>
 
 
-        <!-- BUSINESS SUPPLY -->
-        <section id="business" class="business-section">
+        <!-- BUSINESS SECTION -->
+        <section class="business-section" id="business">
 
             <div class="business-content">
 
-                <p class="eyebrow">YOUR DAILY JUICE PARTNER</p>
+                <span class="eyebrow">BUILT FOR YOUR BUSINESS</span>
 
-                <h2>Fresh Juice Supply<br>For Your Business.</h2>
+                <h2>
+                    Your customers<br>
+                    deserve <span>freshness.</span>
+                </h2>
 
                 <p>
-                    We supply freshly prepared fruit juices
-                    every morning to businesses that serve
-                    freshness to their customers.
+                    We supply freshly prepared fruit juices every morning
+                    to businesses that want to serve something refreshing.
                 </p>
 
                 <div class="business-types">
-                    <span>Restaurants</span>
-                    <span>Bakeries</span>
-                    <span>Supermarkets</span>
+
+                    <div>
+                        <span>🍽️</span>
+                        <p>Restaurants</p>
+                    </div>
+
+                    <div>
+                        <span>🥐</span>
+                        <p>Bakeries</p>
+                    </div>
+
+                    <div>
+                        <span>🛒</span>
+                        <p>Supermarkets</p>
+                    </div>
+
                 </div>
 
-                <ul>
+                <ul class="supply-details">
                     <li>Daily morning supply</li>
                     <li>250 ml and 450 ml bottles</li>
                     <li>One-day shelf life</li>
                 </ul>
 
-                <p class="service-area">
-                    Serving Thodupuzha, Muvattupuzha
-                    and nearby areas.
-                </p>
-
                 <a
-                    href="https://wa.me/919562820749?text=Hello%20FRESHY%2C%20I%20would%20like%20to%20enquire%20about%20business%20supply."
-                    class="primary-button">
-                    Enquire for Supply
+                    href="https://wa.me/919562820749?text=Hello%20FRESHY%2C%20I%20am%20interested%20in%20business%20supply."
+                    class="button">
+                    Enquire for Supply ↗
                 </a>
 
             </div>
@@ -150,32 +240,63 @@
         </section>
 
 
-        <!-- CONTACT -->
-        <section id="contact" class="contact-section">
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
 
-            <p class="eyebrow">LET'S WORK TOGETHER</p>
+            <span class="eyebrow">A FRESH APPROACH</span>
 
-            <h2>Let's Talk<br>Business.</h2>
+            <h2>
+                Simply fresh.<br>
+                Nothing complicated.
+            </h2>
 
             <p>
-                Interested in adding FRESHY juices
-                to your business?
+                FRESHY is focused on supplying freshly prepared fruit
+                juices to restaurants, bakeries and supermarkets.
+                We believe good juice starts with freshness and
+                consistent daily supply.
+            </p>
+
+            <div class="about-location">
+                <span>📍</span>
+                Thodupuzha, Kerala
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+
+            <span class="eyebrow">LET'S WORK TOGETHER</span>
+
+            <h2>
+                Let's make<br>
+                business <span>fresher.</span>
+            </h2>
+
+            <p>
+                Interested in supplying FRESHY juices at your business?
+                Get in touch with us.
             </p>
 
             <div class="contact-buttons">
 
-                <a href="tel:+919562820749" class="primary-button">
-                    Call Us
+                <a href="tel:+919562820749" class="button">
+                    Call Us ↗
                 </a>
 
-                <a href="https://wa.me/919562820749"
-                   class="secondary-button">
-                    WhatsApp Us
+                <a
+                    href="https://wa.me/919562820749"
+                    class="button button-light">
+                    WhatsApp Us ↗
                 </a>
 
             </div>
 
-            <p class="phone-number">+91 95628 20749</p>
+            <p class="phone-number">
+                +91 95628 20749
+            </p>
 
         </section>
 
@@ -183,17 +304,31 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
 
-        <a href="#home" class="footer-logo">FRESHY<span>.</span></a>
+        <a href="#home" class="footer-logo">
+            FRESHY<span>.</span>
+        </a>
 
         <p>Simply Fresh, Simply FRESHY.</p>
 
-        <p>Fresh Juice Supply for Businesses.</p>
+        <p class="footer-description">
+            Fresh juice supply for businesses.
+        </p>
 
-        <small>© 2026 FRESHY. All rights reserved.</small>
+        <div class="footer-bottom">
+
+            <span>© 2026 FRESHY. All rights reserved.</span>
+
+            <span>Thodupuzha, Kerala</span>
+
+        </div>
 
     </footer>
+
+
+    <!-- MOBILE NAVIGATION -->
+    <script src="script.js"></script>
 
 </body>
 </html>
