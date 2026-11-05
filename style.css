@@ -1,0 +1,423 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #fffdf5;
+    color: #253323;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 100px 8%;
+}
+
+/* HEADER */
+
+header {
+    padding: 22px 8%;
+    background: #fffdf5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e99c00;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: #eaf3dc;
+    border-radius: 0 0 55px 55px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #68834b;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(55px, 8vw, 100px);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -5px;
+    margin-bottom: 28px;
+}
+
+.hero-description {
+    max-width: 500px;
+    font-size: 18px;
+    color: #687063;
+    margin-bottom: 32px;
+}
+
+/* BUTTONS */
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #f5ad19;
+    color: #253323;
+}
+
+.primary-button:hover {
+    background: #253323;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    background: white;
+    border: 1px solid #253323;
+}
+
+.secondary-button:hover {
+    background: #253323;
+    color: white;
+}
+
+/* JUICES SECTION */
+
+.juices-section {
+    text-align: center;
+}
+
+.section-heading h2,
+.business-content h2,
+.contact-section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.section-heading > p:last-child {
+    color: #777e70;
+    margin-bottom: 50px;
+}
+
+.juice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.juice-card {
+    min-height: 320px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.juice-card:hover {
+    transform: translateY(-8px);
+}
+
+.pineapple {
+    background: #ffe7a9;
+}
+
+.grapes {
+    background: #e9d9f5;
+}
+
+.orange {
+    background: #ffd8ae;
+}
+
+.juice-visual {
+    font-size: 85px;
+    margin-bottom: auto;
+    align-self: center;
+    padding: 15px;
+}
+
+.juice-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.juice-card p {
+    color: #6d7067;
+    font-size: 14px;
+}
+
+/* BOTTLE SIZES */
+
+.bottle-sizes {
+    margin-top: 60px;
+}
+
+.bottle-sizes h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bottle-sizes span {
+    display: inline-block;
+    background: #eaf3dc;
+    padding: 12px 28px;
+    margin: 5px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.bottle-sizes p {
+    color: #777e70;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* BUSINESS SECTION */
+
+.business-section {
+    background: #f9edce;
+    border-radius: 55px;
+    text-align: center;
+}
+
+.business-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.business-content > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #687063;
+}
+
+.business-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px 0;
+}
+
+.business-types span {
+    background: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.business-content ul {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.business-content li {
+    margin: 12px 0;
+    font-weight: 600;
+}
+
+.business-content li::before {
+    content: "✓ ";
+    color: #68834b;
+    font-weight: 800;
+}
+
+.service-area {
+    margin-bottom: 30px !important;
+}
+
+/* CONTACT */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section > p:not(.eyebrow) {
+    color: #777e70;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.phone-number {
+    font-weight: 700;
+    color: #253323 !important;
+}
+
+/* FOOTER */
+
+footer {
+    background: #253323;
+    color: white;
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d7dfd0;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer small {
+    display: block;
+    color: #aeb9a6;
+    margin-top: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 75px 6%;
+    }
+
+    header {
+        padding: 20px 6%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 550px;
+        border-radius: 0 0 35px 35px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .juice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .juice-card {
+        min-height: 260px;
+    }
+
+    .business-section {
+        border-radius: 35px;
+    }
+
+    .section-heading h2,
+    .business-content h2,
+    .contact-section h2 {
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 47px;
+    }
+
+    .juice-visual {
+        font-size: 70px;
+    }
+}
